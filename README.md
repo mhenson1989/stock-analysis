@@ -21,7 +21,8 @@ Both of these stocks show promise for future yield, especially when looking at 2
 ![**2018 Stock Analysis Snapshot**](https://github.com/mhenson1989/stock-analysis/blob/main/Resources/AllStocks_2018.PNG)
 
 ### **Execution Time Analysis - *Reviewing Refactored Code***
-Within my original code, my analysis time for both 2017 and 2018 averaged just under 2 seconds. However, within my refactored code, my analysis time decreased. 
+Within my original code, my analysis time for both 2017 and 2018 averaged just under 2 seconds. However, within my refactored code, my analysis time decreased for my 2017 Stock Analysis by approximately 0.4 seconds, but my analysis time for my 2018 Stock Analysis actually increased by approximately 0.4 seconds. See snapshot below for the increased run time for the 2018 Refactored Stock Analysis Code.
+![Refactored 2018 Run Time](https://github.com/mhenson1989/stock-analysis/blob/main/Resources/VBA_Refactored_2018.PNG)
 
 ### **Challenges and Obstacles of Refactoring**
 I was confronted with significant challenges with refactoring this code, particuarly in regards to the output loop, especially when calculating my return rate column - this line continued to prompt an error code. I was unable to find a solution for this error, and therefore opted to tag this line as a note in my code and exclude it from my output. Additionally, I had challenges when outputting the loop for the tickers column. Often, the output would repeat the ticker(0) value over the i = RowCount value (essentially over 3,012 rows). I was unable to rectify this error in the code as well. Unlike in the original VBA script, which also had bugs when run originally, I was ultimately unable to find a concrete logic in the steps of the refactored code, which made it difficult to troubleshoot. 
