@@ -31,13 +31,14 @@ I was confronted with significant challenges with refactoring this code, particu
 ### **A Final Comparison**
 
 
-- *What the advantages or disadvantages of refactoring code?*
+1. *What the advantages or disadvantages of refactoring code?*
 	- Though refactoring the stock analysis code shaved time from my macro, I would argue that ultimately the time spent refactoring the code, did not ultimately save time on the project overall. I could see how in a significantly larger script, it would be advantageous to refactor the code to create a more streamlined, efficient and readable script, the original script for our All Stocks Analysis was not overly complicated. When looking at refactoring it for more efficient code, I found that the steps were largely a duplication of the original code with a reliance on the tickerIndex. Though the tickerIndex was intended to simplify the for loops and conditionals, I found the nested loops to be overall, more difficult to comprehend than the original code. 
 
 
-- *How do these pros and cons apply to refactoring the original VBA script?*
-	-Pros: Refactoring the original VBA script provides the opportunity for a cleaner script with less for loops.
+2. *How do these pros and cons apply to refactoring the original VBA script?*
 
-	-Cons: Though it might have eliminated nested loops, the inclusion of the tickerIndex variable to streamline the four arrays, essentially creates a nested logic that is more difficult to understand - thus significantly increasing the time spent to refactor the code. 
+	- **Pros:** Refactoring the original VBA script provides the opportunity for a cleaner script with less for loops.
+
+	- **Cons:** Though it might have eliminated nested loops, the inclusion of the tickerIndex variable to streamline the four arrays, essentially creates a nested logic that is more difficult to understand - thus significantly increasing the time spent to refactor the code. 
 
 
