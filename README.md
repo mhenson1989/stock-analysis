@@ -37,6 +37,7 @@ I was confronted with significant challenges with refactoring this code, particu
 
 - *How do these pros and cons apply to refactoring the original VBA script?*
 	-Pros: Refactoring the original VBA script provides the opportunity for a cleaner script with less for loops.
+
 	-Cons: Though it might have eliminated nested loops, the inclusion of the tickerIndex variable to streamline the four arrays, essentially creates a nested logic that is more difficult to understand - thus significantly increasing the time spent to refactor the code. 
 
 
