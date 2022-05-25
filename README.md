@@ -14,12 +14,11 @@ Looking at the data from a year over year perspective, I would recommend investi
 Similarly, the RUN ticker stock has seen incremental growth on return from 2017 to 2018. Though it's return rate in 2017 was minimal (5.5%), it saw a substantial increase in it's return rate, year over year, jumping to 84% in 2018. 
 Both of these stocks show promise for future yield, especially when looking at 2018 return rates for the other analyzed ticker stocks - all of which had a negative rate of return. 
 
-**2017 Stock Analysis Snapshot**
 
-!(https://github.com/mhenson1989/stock-analysis/blob/main/Resources/AllStocks_2017.PNG)
+![**2017 Stock Analysis Snapshot**](https://github.com/mhenson1989/stock-analysis/blob/main/Resources/AllStocks_2017.PNG)
 
-**2018 Stock Analysis Snapshot**
-!(https://github.com/mhenson1989/stock-analysis/blob/main/Resources/AllStocks_2018.PNG)
+
+![**2018 Stock Analysis Snapshot**](https://github.com/mhenson1989/stock-analysis/blob/main/Resources/AllStocks_2018.PNG)
 
 ### **Execution Time Analysis - *Reviewing Refactored Code***
 Within my original code, my analysis time for both 2017 and 2018 averaged just under 2 seconds. However, within my refactored code, my analysis time decreased. 
