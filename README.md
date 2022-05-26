@@ -21,11 +21,14 @@ Both of these stocks show promise for future yield, especially when looking at 2
 ![**2018 Stock Analysis Snapshot**](https://github.com/mhenson1989/stock-analysis/blob/main/Resources/AllStocks_2018.PNG)
 
 ### **Execution Time Analysis - *Reviewing Refactored Code***
-Within my original code, my analysis time for both 2017 and 2018 averaged just under 2 seconds. However, within my refactored code, my analysis time decreased for my 2017 Stock Analysis by approximately 0.4 seconds, but my analysis time for my 2018 Stock Analysis actually increased by approximately 0.4 seconds. See snapshot below for the increased run time for the 2018 Refactored Stock Analysis Code.
-![Refactored 2018 Run Time](https://github.com/mhenson1989/stock-analysis/blob/main/Resources/VBA_Refactored_2018.PNG)
+Within my original code, my analysis time for both 2017 and 2018 averaged just under 2 seconds. Within my refactored code, I was able to get the code to run on average between 0.13 and 0.14 seconds for both the 2017 and 2018 stock analyses. This is significant, since I expected my run time to decrease by at least a factor of 12, however, the actual code runs slightly faster than my initial expectations.
+Shown below, you can see the difference between the Original All Stocks Analysis Run Time and the Refactored All Stocks Analysis Run Time for 2018.  
+![Original Run Time](https://github.com/mhenson1989/stock-analysis/blob/main/Resources/VBA_OriginalCode_2018.PNG)
+
+![Refactored Run Time](https://github.com/mhenson1989/stock-analysis/blob/main/Resources/VBA_Challenge_2018.PNG)
 
 ### **Challenges and Obstacles of Refactoring**
-I was confronted with significant challenges with refactoring this code, particuarly in regards to the output loop, especially when calculating my return rate column - this line continued to prompt an error code. I was unable to find a solution for this error, and therefore opted to tag this line as a note in my code and exclude it from my output. Additionally, I had challenges when outputting the loop for Volume (Column B). In many cases, I recieved an error code that said "Compile error. Expected Array". I also sometimes was able to produce output, however, the output would be equal to zero(0) for every line. I believe that the code should be written like the snapshot below, which leads me to believe that there is a potential error in my defined arrays. Unlike in the original VBA script, which also had bugs when run originally, I was ultimately unable to find a concrete logic in the steps of the refactored code, which made it difficult to troubleshoot. 
+I was confronted with significant challenges with refactoring this code, particualry with the code block below. For the output of the Total Volume and Return line, I continued to get an error that stated: Compile Error. Expected Array. After reviewing, I realized that I needed to refine my tickerIndex variable and use that to replace my original nested loops. Once I was able to understand that the tickerIndex variable was essentially replacing my nested loops, thus allowing the code to run through only the 3,014 lines, versus 3,014 lines for each 12 tickers, the code refactoring made a lot more sense. 
 ![Refactored Code with Errors](https://github.com/mhenson1989/stock-analysis/blob/main/Resources/CodeSnippet_Step4.PNG)
 
 
@@ -33,13 +36,13 @@ I was confronted with significant challenges with refactoring this code, particu
 
 
 1. *What the advantages or disadvantages of refactoring code?*
-	- Though refactoring the stock analysis code shaved time from my macro, I would argue that ultimately the time spent refactoring the code, did not save an abundant amount of time on the project overall. I could see how in a significantly larger script, it would be advantageous to refactor the code to create a more streamlined, efficient and readable script, however, the original script for our All Stocks Analysis was not overly complicated. When looking at refactoring it for more efficient code, I found that the steps were largely a duplication of the original code with a reliance on the tickerIndex. Though the tickerIndex was intended to simplify the for loops and conditionals, I found the nested loops to be overall, more difficult to comprehend than the original code. 
+	- When considering refactoring code, one advantage is to streamline the overall time spent analyzing the data. In this case, my run time was decreased by a quotient of 12 because I eliminated the nested loops and allowed the code to run through 3,014 lines versus approximately 36,000. I do think there's a cost time versus reward consideration when thinking about refactoring code. As an example, this refactoring process took me a full week to code and change my run time from a second to a little less than half a second. In a real world scenario, I might decide that the time spent refactoring is not worth the time saved. If the data set was significantly larger, or we were looking to scale the analysis, I could see this process as an advantage, however, for such a small data set, I think the time spent became a disadvantage.  
 
 
 2. *How do these pros and cons apply to refactoring the original VBA script?*
 
-	- **Pros:** Refactoring the original VBA script provides the opportunity for a cleaner script with less for loops. This creates a higher liklihood for outside readers to understand your script, or for the original coder to come back after a length of time and dive back into the logic seamlessly. 
+	- **Pros:** Refactoring the original VBA script provides the opportunity for a cleaner script with less for loops. This creates a higher liklihood for outside readers to understand your script, or for the original coder to come back after a length of time and dive back into the logic seamlessly. It also has the liklihood of faster analysis run times with your data set, which can be advantageous for large data sets. 
 
-	- **Cons:** Though it might have eliminated nested loops, the inclusion of the tickerIndex variable to streamline the four arrays, essentially creates a nested logic that is more difficult to understand - thus significantly increasing the time spent to refactor the code. 
+	- **Cons:** The amount of time spent to refactor and trouble shoot the code was significant and does not outweigh the time shaved from the run time. 
 
 
