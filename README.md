@@ -15,14 +15,16 @@ Similarly, the RUN ticker stock has seen incremental growth on return from 2017 
 Both of these stocks show promise for future yield, especially when looking at 2018 return rates for the other analyzed ticker stocks - all of which had a negative rate of return. 
 
 
+![**2018 Stock Analysis Snapshot**](https://github.com/mhenson1989/stock-analysis/blob/main/Resources/AllStocks_2018.PNG)
+
 ![**2017 Stock Analysis Snapshot**](https://github.com/mhenson1989/stock-analysis/blob/main/Resources/AllStocks_2017.PNG)
 
 
-![**2018 Stock Analysis Snapshot**](https://github.com/mhenson1989/stock-analysis/blob/main/Resources/AllStocks_2018.PNG)
 
 ### **Execution Time Analysis - *Reviewing Refactored Code***
 Within my original code, my analysis time for both 2017 and 2018 averaged just under 2 seconds. Within my refactored code, I was able to get the code to run on average between 0.13 and 0.14 seconds for both the 2017 and 2018 stock analyses. This is significant, since I expected my run time to decrease by at least a factor of 12, however, the actual code runs slightly faster than my initial expectations.
 Shown below, you can see the difference between the Original All Stocks Analysis Run Time and the Refactored All Stocks Analysis Run Time for 2018.  
+
 ![Original Run Time](https://github.com/mhenson1989/stock-analysis/blob/main/Resources/VBA_OriginalCode_2018.PNG)
 
 ![Refactored Run Time](https://github.com/mhenson1989/stock-analysis/blob/main/Resources/VBA_Challenge_2018.PNG)
